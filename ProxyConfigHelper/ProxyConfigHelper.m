@@ -1,6 +1,6 @@
 //
 //  ProxyConfigHelper.m
-//  com.west2online.AikoX.ProxyConfigHelper
+//  com.west2online.ClashX.ProxyConfigHelper
 //
 //  Created by yichengchen on 2019/8/17.
 //  Copyright © 2019 west2online. All rights reserved.
@@ -30,7 +30,7 @@ ProxyConfigRemoteProcessProtocol
     if (self = [super init]) {
         self.connections = [NSMutableSet new];
         self.shouldQuit = NO;
-        self.listener = [[NSXPCListener alloc] initWithMachServiceName:@"com.west2online.AikoX.ProxyConfigHelper"];
+        self.listener = [[NSXPCListener alloc] initWithMachServiceName:@"com.west2online.ClashX.ProxyConfigHelper"];
         self.listener.delegate = self;
     }
     return self;

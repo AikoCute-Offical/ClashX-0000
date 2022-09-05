@@ -1,6 +1,6 @@
 //
 //  RemoteConfigManager.swift
-//  AikoX
+//  ClashX
 //
 //  Created by yicheng on 2018/11/6.
 //  Copyright © 2018 west2online. All rights reserved.
@@ -54,7 +54,7 @@ class RemoteConfigManager {
         }
         Logger.log("set up autoUpateTimer")
 
-        refreshActivity = NSBackgroundActivityScheduler(identifier: "com.AikoX.configupdate")
+        refreshActivity = NSBackgroundActivityScheduler(identifier: "com.ClashX.configupdate")
         refreshActivity?.repeats = true
         refreshActivity?.interval = 60 * 60 * 2 // Two hour
         refreshActivity?.tolerance = 60 * 60

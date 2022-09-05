@@ -1,6 +1,6 @@
 //
 //  ConfigFileFactory.swift
-//  AikoX
+//  ClashX
 //
 //  Created by CYC on 2018/8/5.
 //  Copyright © 2018年 yichengchen. All rights reserved.

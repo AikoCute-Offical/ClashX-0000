@@ -1,6 +1,6 @@
 //
 //  SystemProxyManager.swift
-//  AikoX
+//  ClashX
 //
 //  Created by yichengchen on 2019/8/17.
 //  Copyright © 2019 west2online. All rights reserved.

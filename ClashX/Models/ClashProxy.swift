@@ -1,6 +1,6 @@
 //
 //  ClashProxy.swift
-//  AikoX
+//  ClashX
 //
 //  Created by CYC on 2019/3/17.
 //  Copyright © 2019 west2online. All rights reserved.

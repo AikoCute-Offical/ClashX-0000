@@ -1,6 +1,6 @@
 //
 //  iCloudManager.swift
-//  AikoX
+//  ClashX
 //
 //  Created by yicheng on 2020/5/10.
 //  Copyright © 2020 west2online. All rights reserved.
@@ -10,7 +10,7 @@ import Cocoa
 
 class ICloudManager {
     static let shared = ICloudManager()
-    private let queue = DispatchQueue(label: "com.AikoX.icloud")
+    private let queue = DispatchQueue(label: "com.ClashX.icloud")
     private var metaQuery: NSMetadataQuery?
     private var enableMenuItem: NSMenuItem?
     private var icloudAvailable = false {

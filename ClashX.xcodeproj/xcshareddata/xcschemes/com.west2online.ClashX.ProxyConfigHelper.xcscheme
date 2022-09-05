@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F9A7C0682306E874007163C7"
-               BuildableName = "com.west2online.AikoX.ProxyConfigHelper"
-               BlueprintName = "com.west2online.AikoX.ProxyConfigHelper"
-               ReferencedContainer = "container:AikoX.xcodeproj">
+               BuildableName = "com.west2online.ClashX.ProxyConfigHelper"
+               BlueprintName = "com.west2online.ClashX.ProxyConfigHelper"
+               ReferencedContainer = "container:ClashX.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F9A7C0682306E874007163C7"
-            BuildableName = "com.west2online.AikoX.ProxyConfigHelper"
-            BlueprintName = "com.west2online.AikoX.ProxyConfigHelper"
-            ReferencedContainer = "container:AikoX.xcodeproj">
+            BuildableName = "com.west2online.ClashX.ProxyConfigHelper"
+            BlueprintName = "com.west2online.ClashX.ProxyConfigHelper"
+            ReferencedContainer = "container:ClashX.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -63,9 +63,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F9A7C0682306E874007163C7"
-            BuildableName = "com.west2online.AikoX.ProxyConfigHelper"
-            BlueprintName = "com.west2online.AikoX.ProxyConfigHelper"
-            ReferencedContainer = "container:AikoX.xcodeproj">
+            BuildableName = "com.west2online.ClashX.ProxyConfigHelper"
+            BlueprintName = "com.west2online.ClashX.ProxyConfigHelper"
+            ReferencedContainer = "container:ClashX.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

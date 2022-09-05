@@ -1,6 +1,6 @@
 //
 //  RemoteConfigUpdateIntervalSettingView.swift
-//  AikoX Pro
+//  ClashX Pro
 //
 //  Created by yicheng on 2021/10/4.
 //  Copyright © 2021 west2online. All rights reserved.

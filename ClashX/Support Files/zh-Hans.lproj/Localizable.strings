@@ -26,13 +26,13 @@
 "Cancel" = "取消";
 
 /* No comment provided by engineer. */
-"AikoX fail to create ~/.config/clash folder. Please check privileges or manually create folder and restart AikoX." = "AikoX 创建 ~/.config/clash 文件夹失败，请检查权限设置或者手动创建文件夹后重启 AikoX";
+"ClashX fail to create ~/.config/clash folder. Please check privileges or manually create folder and restart ClashX." = "ClashX 创建 ~/.config/clash 文件夹失败，请检查权限设置或者手动创建文件夹后重启 ClashX";
 
 /* No comment provided by engineer. */
-"AikoX needs to install/update a helper tool with administrator privileges, otherwise AikoX won't be able to configure system proxy." = "AikoX 需要使用管理员权限安装/更新一个帮助程序，否则 AikoX 将无法设置系统代理。";
+"ClashX needs to install/update a helper tool with administrator privileges, otherwise ClashX won't be able to configure system proxy." = "ClashX 需要使用管理员权限安装/更新一个帮助程序，否则 ClashX 将无法设置系统代理。";
 
 /* No comment provided by engineer. */
-"AikoX Start Error!" = "AikoX 启动出错";
+"ClashX Start Error!" = "ClashX 启动出错";
 
 /* No comment provided by engineer. */
 "Config file have been changed" = "配置文件已被修改";
@@ -85,7 +85,7 @@
 "Mode" = "模式";
 
 /* No comment provided by engineer. */
-"Need to Restart the AikoX to Take effect, Please start AikoX manually" = "需要重启AikoX生效，请手动启动AikoX";
+"Need to Restart the ClashX to Take effect, Please start ClashX manually" = "需要重启ClashX生效，请手动启动ClashX";
 
 /* No comment provided by engineer. */
 "Never" = "从未";
@@ -94,7 +94,7 @@
 "OK" = "确定";
 
 /* No comment provided by engineer. */
-"Ports Open Fail, Please try to restart AikoX" = "端口打开失败，请尝试重启AikoX";
+"Ports Open Fail, Please try to restart ClashX" = "端口打开失败，请尝试重启ClashX";
 
 /* No comment provided by engineer. */
 "Prelease" = "Prelease";
@@ -103,7 +103,7 @@
 "Proxy Mode" = "出站模式";
 
 /* No comment provided by engineer. */
-"Proxy settings are changed by another process. AikoX is no longer the default system proxy." = "系统代理设置已被另一个进程修改，AikoX不再是系统默认代理";
+"Proxy settings are changed by another process. ClashX is no longer the default system proxy." = "系统代理设置已被另一个进程修改，ClashX不再是系统默认代理";
 
 /* No comment provided by engineer. */
 "Quit" = "退出";
@@ -163,7 +163,7 @@
 "The remote config name is duplicated" = "托管配置文件名称重复";
 
 /* No comment provided by engineer. */
-"This version of AikoX contains a break change due to clash core 1.0 released. Check if your config is not working properly." = "由于Clash Core发布1.0版本，使用此版本的 AikoX 可能需要更新配置内容\n前往 https://github.com/Dreamacro/clash/wiki/breaking-changes-in-1.0.0 查看详情";
+"This version of ClashX contains a break change due to clash core 1.0 released. Check if your config is not working properly." = "由于Clash Core发布1.0版本，使用此版本的 ClashX 可能需要更新配置内容\n前往 https://github.com/Dreamacro/clash/wiki/breaking-changes-in-1.0.0 查看详情";
 
 /* No comment provided by engineer. */
 "Update GEOIP Database" = "更新IP数据库";

@@ -1,6 +1,6 @@
 //
 //  Settings.swift
-//  AikoX
+//  ClashX
 //
 //  Created by yicheng on 2020/12/18.
 //  Copyright © 2020 west2online. All rights reserved.

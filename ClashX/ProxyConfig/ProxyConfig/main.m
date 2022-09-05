@@ -121,7 +121,7 @@ int main(int argc, const char * argv[]) {
         exit(EXIT_FAILURE);
     }
     
-    SCPreferencesRef prefRef = SCPreferencesCreateWithAuthorization(nil, CFSTR("AikoX"), nil, authRef);
+    SCPreferencesRef prefRef = SCPreferencesCreateWithAuthorization(nil, CFSTR("ClashX"), nil, authRef);
     
     NSDictionary *sets = (__bridge NSDictionary *)SCPreferencesGetValue(prefRef, kSCPrefNetworkServices);
     

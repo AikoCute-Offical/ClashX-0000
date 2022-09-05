@@ -1,6 +1,6 @@
 //
 //  ProxySettingTool.m
-//  com.west2online.AikoX.ProxyConfigHelper
+//  com.west2online.ClashX.ProxyConfigHelper
 //
 //  Created by yichengchen on 2019/8/17.
 //  Copyright © 2019 west2online. All rights reserved.
@@ -93,7 +93,7 @@
 
 + (NSMutableDictionary<NSString *,NSDictionary *> *)currentProxySettings {
     __block NSMutableDictionary<NSString *,NSDictionary *> *info = [NSMutableDictionary dictionary];
-    SCPreferencesRef ref = SCPreferencesCreate(nil, CFSTR("AikoX"), nil);
+    SCPreferencesRef ref = SCPreferencesCreate(nil, CFSTR("ClashX"), nil);
     [ProxySettingTool getDiviceListWithPrefRef:ref filterInterface:YES devices:^(NSString *key, NSDictionary *dev) {
         NSDictionary *proxySettings = dev[(__bridge NSString *)kSCEntNetProxies];
         info[key] = [proxySettings copy];
@@ -241,7 +241,7 @@
 }
 
 - (void)applySCNetworkSettingWithRef:(void(^)(SCPreferencesRef))callback {
-    SCPreferencesRef ref = SCPreferencesCreateWithAuthorization(nil, CFSTR("com.west2online.AikoX.ProxyConfigHelper.config"), nil, self.authRef);
+    SCPreferencesRef ref = SCPreferencesCreateWithAuthorization(nil, CFSTR("com.west2online.ClashX.ProxyConfigHelper.config"), nil, self.authRef);
     if (!ref) {
         return;
     }

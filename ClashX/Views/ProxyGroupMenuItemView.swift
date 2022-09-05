@@ -1,6 +1,6 @@
 //
 //  ProxyGroupMenuItemView.swift
-//  AikoX
+//  ClashX
 //
 //  Created by yicheng on 2019/10/16.
 //  Copyright © 2019 west2online. All rights reserved.

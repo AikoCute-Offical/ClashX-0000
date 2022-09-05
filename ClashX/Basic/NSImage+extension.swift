@@ -1,6 +1,6 @@
 //
 //  NSImage+extension.swift
-//  AikoX
+//  ClashX
 //
 //  Created by CYC on 2018/8/6.
 //  Copyright © 2018年 yichengchen. All rights reserved.

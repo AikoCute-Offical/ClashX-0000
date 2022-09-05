@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  AikoX
+//  ClashX
 //
 //  Created by CYC on 2018/6/10.
 //  Copyright © 2018年 yichengchen. All rights reserved.
@@ -129,7 +129,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         if ConfigManager.shared.proxyPortAutoSet && !ConfigManager.shared.isProxySetByOtherVariable.value || NetworkChangeNotifier.isCurrentSystemSetToClash(looser: true) ||
             NetworkChangeNotifier.hasInterfaceProxySetToClash() {
-            Logger.log("AikoX quit need clean proxy setting")
+            Logger.log("ClashX quit need clean proxy setting")
             shouldWait = true
             group.enter()
 
@@ -139,7 +139,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
 
         if !shouldWait {
-            Logger.log("AikoX quit without clean waiting")
+            Logger.log("ClashX quit without clean waiting")
             return .terminateNow
         }
 
@@ -152,7 +152,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             let res = group.wait(timeout: .now() + 5)
             switch res {
             case .success:
-                Logger.log("AikoX quit after clean up finish")
+                Logger.log("ClashX quit after clean up finish")
                 DispatchQueue.main.asyncAfter(deadline: .now()+0.2) {
                     NSApp.reply(toApplicationShouldTerminate: true)
                 }
@@ -160,7 +160,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     NSApp.reply(toApplicationShouldTerminate: true)
                 }
             case .timedOut:
-                Logger.log("AikoX quit after clean up timeout")
+                Logger.log("ClashX quit after clean up timeout")
                 DispatchQueue.main.async {
                     NSApp.reply(toApplicationShouldTerminate: true)
                 }
@@ -170,13 +170,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
         }
 
-        Logger.log("AikoX quit wait for clean up")
+        Logger.log("ClashX quit wait for clean up")
         return .terminateLater
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         UserDefaults.standard.set(0, forKey: "launch_fail_times")
-        Logger.log("AikoX will terminate")
+        Logger.log("ClashX will terminate")
         if NetworkChangeNotifier.isCurrentSystemSetToClash(looser: true) ||
             NetworkChangeNotifier.hasInterfaceProxySetToClash() {
             Logger.log("Need Reset Proxy Setting again", level: .error)
@@ -345,7 +345,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             .distinctUntilChanged()
             .filter { $0 }.bind { _ in
                 let rawProxy = NetworkChangeNotifier.getRawProxySetting()
-                Logger.log("proxy changed to no AikoX setting: \(rawProxy)", level: .warning)
+                Logger.log("proxy changed to no ClashX setting: \(rawProxy)", level: .warning)
                 NSUserNotificationCenter.default.postProxyChangeByOtherAppNotice()
             }.disposed(by: disposeBag)
 
@@ -602,7 +602,7 @@ extension AppDelegate {
     @IBAction func actionSetSystemProxy(_ sender: Any) {
         var canSaveProxy = true
         if ConfigManager.shared.isProxySetByOtherVariable.value {
-            // should reset proxy to AikoX
+            // should reset proxy to ClashX
             ConfigManager.shared.isProxySetByOtherVariable.accept(false)
             ConfigManager.shared.proxyPortAutoSet = true
             // clear then reset.
@@ -733,7 +733,7 @@ extension AppDelegate {
 
     @IBAction func actionSetUseApiMode(_ sender: Any) {
         let alert = NSAlert()
-        alert.informativeText = NSLocalizedString("Need to Restart the AikoX to Take effect, Please start AikoX manually", comment: "")
+        alert.informativeText = NSLocalizedString("Need to Restart the ClashX to Take effect, Please start ClashX manually", comment: "")
         alert.addButton(withTitle: NSLocalizedString("Apply and Quit", comment: ""))
         alert.addButton(withTitle: NSLocalizedString("Cancel", comment: ""))
         if alert.runModal() == .alertFirstButtonReturn {

@@ -1,6 +1,6 @@
 //
 //  MenuItemBaseView.swift
-//  AikoX
+//  ClashX
 //
 //  Created by yicheng on 2019/11/1.
 //  Copyright © 2019 west2online. All rights reserved.

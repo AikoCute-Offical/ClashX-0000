@@ -1,4 +1,4 @@
-module github.com/yichengchen/AikoX/AikoX
+module github.com/yichengchen/ClashX/ClashX
 
 go 1.19
 

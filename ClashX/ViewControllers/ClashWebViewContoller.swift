@@ -1,6 +1,6 @@
 //
 //  ClashWebViewContoller.swift
-//  AikoX
+//  ClashX
 //
 //  Created by yicheng on 2018/8/28.
 //  Copyright © 2018年 west2online. All rights reserved.
@@ -82,7 +82,7 @@ class ClashWebViewContoller: NSViewController {
         webview.uiDelegate = self
         webview.navigationDelegate = self
 
-        webview.customUserAgent = "AikoX Runtime"
+        webview.customUserAgent = "ClashX Runtime"
 
         if NSAppKitVersion.current.rawValue > 1500 {
             webview.setValue(false, forKey: "drawsBackground")
@@ -148,7 +148,7 @@ class ClashWebViewContoller: NSViewController {
     }
 
     func loadWebRecourses() {
-        // defaults write com.west2online.AikoX webviewUrl "your url"
+        // defaults write com.west2online.ClashX webviewUrl "your url"
         let defaultUrl = "http://127.0.0.1:\(ConfigManager.shared.apiPort)/ui/"
         let url = UserDefaults.standard.string(forKey: "webviewUrl") ?? defaultUrl
         if let url = URL(string: url) {

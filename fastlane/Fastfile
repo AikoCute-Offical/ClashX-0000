@@ -3,8 +3,8 @@ lane :build do
 addKeyChain
 
 build_app(
-  workspace: "AikoX.xcworkspace",
-  scheme: "AikoX",
+  workspace: "ClashX.xcworkspace",
+  scheme: "ClashX",
   export_method: "developer-id",
   skip_package_pkg: "true",
   clean: "true"
@@ -15,7 +15,7 @@ end
 
 lane :beta do
 current_version = get_version_number(
-  target: "AikoX"
+  target: "ClashX"
 )
 timestamp = Time.now.utc
 new_build_identifier = "%d%02d%02d%02d%02d" % [
@@ -28,7 +28,7 @@ new_build_identifier = "%d%02d%02d%02d%02d" % [
 new_version = current_version + "." + new_build_identifier
 increment_build_number_in_plist(
     build_number: new_version,
-    target: 'AikoX'
+    target: 'ClashX'
 )
 end
 

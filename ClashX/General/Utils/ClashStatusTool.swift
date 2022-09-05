@@ -1,6 +1,6 @@
 //
 //  ClashStatusTool.swift
-//  AikoX Pro
+//  ClashX Pro
 //
 //  Created by yicheng on 2020/4/28.
 //  Copyright © 2020 west2online. All rights reserved.
@@ -15,8 +15,8 @@ class ClashStatusTool {
         if cfg.usedHttpPort == 0 {
             Logger.log("checkPortConfig: \(cfg.mixedPort) ", level: .error)
             let alert = NSAlert()
-            alert.messageText = NSLocalizedString("AikoX Start Error!", comment: "")
-            alert.informativeText = NSLocalizedString("Ports Open Fail, Please try to restart AikoX", comment: "")
+            alert.messageText = NSLocalizedString("ClashX Start Error!", comment: "")
+            alert.informativeText = NSLocalizedString("Ports Open Fail, Please try to restart ClashX", comment: "")
             alert.addButton(withTitle: NSLocalizedString("Quit", comment: ""))
             alert.addButton(withTitle: "Edit Config")
             DispatchQueue.main.async {
